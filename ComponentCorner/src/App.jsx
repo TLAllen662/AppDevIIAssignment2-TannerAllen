@@ -1,11 +1,13 @@
 import './App.css'
+import Header from './components/Header'
 import ProductCard from './components/ProductCard'
 
 function App() {
   return (
     <main>
+      <Header storeName="ComponentCorner" />
       <h1>ComponentCorner Products</h1>
-      <section className="product-grid" aria-label="Featured products">
+      <section id="products" className="product-grid" aria-label="Featured products">
         <ProductCard
           name="Component Starter Kit"
           price="$24.99"
