@@ -1,8 +1,16 @@
-function Hero() {
+function Hero({ title, subtitle, ctaText }) {
   return (
-    <section>
-      <h2>Build better interfaces with reusable components.</h2>
-      <p>Explore practical UI building blocks for your next project.</p>
+    <section className="store-hero">
+      <img
+        src="https://placehold.co/1200x400/667eea/ffffff?text=Shop+Electronics"
+        alt="Shop Electronics banner"
+        style={{ width: '100%', height: 'auto' }}
+      />
+      <div className="store-hero__content">
+        <h2>{title}</h2>
+        <p>{subtitle}</p>
+        <a href="#products">{ctaText}</a>
+      </div>
     </section>
   )
 }

@@ -1,11 +1,17 @@
 import './App.css'
 import Header from './components/Header'
+import Hero from './components/Hero'
 import ProductCard from './components/ProductCard'
 
 function App() {
   return (
     <main>
       <Header storeName="ComponentCorner" />
+      <Hero
+        title="Smart components for modern shopping"
+        subtitle="Find thoughtful tools and resources for building better digital experiences."
+        ctaText="Explore products"
+      />
       <h1>ComponentCorner Products</h1>
       <section id="products" className="product-grid" aria-label="Featured products">
         <ProductCard
