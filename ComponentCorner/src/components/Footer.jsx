@@ -1,11 +1,13 @@
+import './Footer.css'
+
 function Footer({ storeName, email, phone, address }) {
   return (
     <footer id="contact">
-      <div>
+      <div className="footer-section">
         <h2>{storeName}</h2>
         <p>{address}</p>
       </div>
-      <address>
+      <address className="footer-section">
         <p>
           <a href={`mailto:${email}`}>{email}</a>
         </p>
@@ -13,7 +15,9 @@ function Footer({ storeName, email, phone, address }) {
           <a href={`tel:${phone}`}>{phone}</a>
         </p>
       </address>
-      <p>&copy; {new Date().getFullYear()} {storeName}</p>
+      <p className="footer-copyright">
+        &copy; {new Date().getFullYear()} {storeName}
+      </p>
     </footer>
   )
 }
