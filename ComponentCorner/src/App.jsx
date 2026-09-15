@@ -1,4 +1,5 @@
 import './App.css'
+import Footer from './components/Footer'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import ProductCard from './components/ProductCard'
@@ -33,6 +34,12 @@ function App() {
           description="Helpful checklists for building inclusive interfaces."
         />
       </section>
+      <Footer
+        storeName="ComponentCorner"
+        email="hello@componentcorner.example"
+        phone="+1 (555) 010-2026"
+        address="123 Component Lane, Interface City"
+      />
     </main>
   )
 }
