@@ -1,3 +1,5 @@
+import './Hero.css'
+
 function Hero({ title, subtitle, ctaText }) {
   return (
     <section className="store-hero">
